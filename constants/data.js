@@ -6,30 +6,17 @@ const myData = {
   email: "info@calicheorozco.com",
   projects: [
     {
-      title: "SALSA CATRINA",
-      link: "https://salsa-catrina.surge.sh",
-      imgUrl: "/portafolio1.jpg",
+      title: "Caliche Orozco old Landingpage",
+      link: "https://caliche-old-page-react.herokuapp.com/",
+      imgUrl: "/portafolio8.jpg",
     },
+
     {
-      title: "PLATZICONF MEXICO",
-      link: "https://platziconfmexico.surge.sh/",
-      imgUrl: "/portafolio2.jpg",
+      title: "Caliche MOVIE API",
+      link: "https://caliche-movies.herokuapp.com/",
+      imgUrl: "/portafolio9.jpg",
     },
-    {
-      title: "WWE NETWORK",
-      link: "https://wwenetworkcaliche.surge.sh/",
-      imgUrl: "/portafolio3.jpg",
-    },
-    {
-      title: "Countdown Arduino Day 2021",
-      link: "https://countdownarduino21-caliche.surge.sh",
-      imgUrl: "/portafolio5.jpg",
-    },
-    {
-      title: "SIMON DICE",
-      link: "https://simondice-caliche.surge.sh/",
-      imgUrl: "/portafolio4.jpg",
-    },
+
     {
       title: "Futurnow React Landingpage",
       link: "https://futrnow.herokuapp.com/",
@@ -41,14 +28,29 @@ const myData = {
       imgUrl: "/portafolio7.jpg",
     },
     {
-      title: "Caliche Orozco old Landingpage",
-      link: "https://caliche-old-page-react.herokuapp.com/",
-      imgUrl: "/portafolio8.jpg",
+      title: "SALSA CATRINA",
+      link: "https://salsa-catrina.surge.sh",
+      imgUrl: "/portafolio1.jpg",
     },
     {
-      title: "Caliche MOVIE API",
-      link: "https://caliche-movies.herokuapp.com/",
-      imgUrl: "/portafolio9.jpg",
+      title: "PLATZICONF MEXICO",
+      link: "https://platziconfmexico.surge.sh/",
+      imgUrl: "/portafolio2.jpg",
+    },
+    {
+      title: "Countdown Arduino Day 2021",
+      link: "https://countdownarduino21-caliche.surge.sh",
+      imgUrl: "/portafolio5.jpg",
+    },
+    {
+      title: "WWE NETWORK",
+      link: "https://wwenetworkcaliche.surge.sh/",
+      imgUrl: "/portafolio3.jpg",
+    },
+    {
+      title: "SIMON DICE",
+      link: "https://simondice-caliche.surge.sh/",
+      imgUrl: "/portafolio4.jpg",
     },
   ],
   about: {
