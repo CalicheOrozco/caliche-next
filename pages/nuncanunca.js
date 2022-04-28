@@ -4,7 +4,7 @@ import NuncaNunca from "../components/NuncaNunca";
 
 const nuncanunca = () => {
   return (
-    <ContainerBlock>
+    <ContainerBlock title="Yo nunca nunca - Caliche Orozco">
       <NuncaNunca />
     </ContainerBlock>
   );
