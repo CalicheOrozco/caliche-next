@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import myData from "../constants/data";
 
 export default function NuncaNunca() {
   const [frases, setFrases] = useState([]);
@@ -14,8 +13,6 @@ export default function NuncaNunca() {
     const frase = frases[num];
     const newFrases = frases.splice(num, 1);
     setFrase(frase);
-    console.log(newFrases);
-    console.log("numero de frases: ", frases.length);
     return frase;
   };
 
@@ -26,7 +23,6 @@ export default function NuncaNunca() {
     generateFrase();
   }, []);
 
-  console.log("test: " + frases.length);
   return (
     <section className="bg-white dark:bg-gray-800">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -37,7 +33,7 @@ export default function NuncaNunca() {
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900 h-full">
         <div className="text-center max-w-6xl mx-auto pt-20">
           <p
-            className="leading-loose text-2xl md:text-4xl font-semibold mx-4 py-10 md:py-20"
+            className="leading-loose text-2xl md:text-4xl font-semibold mx-4 pb-5 md:pb-0 md:py-20"
             style={{ lineHeight: "3rem" }}
           >
             {frase}
