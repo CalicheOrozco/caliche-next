@@ -62,13 +62,13 @@ const myData = {
       `I've been developing front-end pages since I was 12 years old. I didn't know what front-end developer meant at that time because the term was not coined back then. `,
       `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and for obvious reasons - if you knew bootstrap, you were cool.`,
       `
-      But now, I've gained experience. I've been coding in React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, Tailwind, etc to name a few. Although I barely know the syntax of some (Psst, Stack overflow!), I consider myself a good developer.`,
+      But now, I've gained experience. I've been coding in React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, Tailwind, etc to name a few.`,
     ],
     descriptionEs: [
       `He estado desarrollando páginas web desde que tenía 12 años. No sabía qué significaba ser desarrollador front-end en ese momento porque el término no se acuñaba en ese tiempo. `,
       `Después de aprender HTML y luchar con CSS, se me ocurrió una idea brillante de usar bootstrap para no tener que diseñar todo yo solo y por razones obvias: si sabías bootstrap, eras cool.`,
       `
-      Pero ahora, he ganado experiencia. He estado programando en React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, Tailwind, etc., por nombrar algunos. Aunque apenas conozco la sintaxis de algunos (¡Psst, Stack overflow!), me considero un buen desarrollador.`,
+      Pero ahora, he ganado experiencia. He estado programando en React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, Tailwind, etc., por nombrar algunos.`,
     ],
     currentProject: "Bedu",
     currentProjectUrl: "https://github.com/bedu-hq",
