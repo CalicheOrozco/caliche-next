@@ -32,32 +32,35 @@ export default function NuncaNunca() {
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900 h-full">
         <div className="text-center max-w-6xl mx-auto pt-20">
-          <p
-            className="leading-loose text-2xl md:text-4xl font-semibold mx-4 pb-5 md:pb-0 md:py-20"
-            style={{ lineHeight: "3rem" }}
-          >
-            {frase}
-          </p>
-          {frases.length > 0 ? (
-            <button
-              type="button"
-              onClick={() => {
-                generateFrase();
-              }}
-              className="text-white bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
-            >
-              {frase === undefined ? "Generar frase" : "Generar otra frase"}
-            </button>
-          ) : (
+          {frases?.length > 0 ? (
+            <>
+              <p
+                className="leading-loose text-2xl md:text-4xl font-semibold mx-4 pb-5 "
+                style={{ lineHeight: "3rem" }}
+              >
+                {frase}
+              </p>
+
+              <button
+                type="button"
+                onClick={() => {
+                  generateFrase();
+                }}
+                className="text-white bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
+              >
+                {frase === undefined ? "Generar frase" : "Generar otra frase"}
+              </button>
+            </>
+          ) : frase ? (
             <div role="alert">
-              <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+              <div class="bg-red-500 text-white font-bold rounded-t hi px-4 py-2">
                 ¡Se han terminado los Nunca nunca!
               </div>
               <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
                 <p>Recuerda que me puedes contactar para agregar mas frases.</p>
               </div>
             </div>
-          )}
+          ) : null}
         </div>
       </div>
     </section>
