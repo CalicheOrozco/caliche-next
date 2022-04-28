@@ -194,24 +194,24 @@ export default function Navbar() {
             {mounted &&
               (lenguage === "En" ? (
                 <div>
-                  <button className="text-base font-normal text-gray-600 dark:text-gray-300">
+                  <div className="text-base font-normal text-gray-600 dark:text-gray-300">
                     <ReactCountryFlag
                       aria-label="Spanish Language"
                       countryCode="MX"
                       className="pr-2"
                     />
                     Español
-                  </button>
+                  </div>
                 </div>
               ) : (
-                <button className="text-base font-normal text-gray-600 dark:text-gray-300">
+                <div className="text-base font-normal text-gray-600 dark:text-gray-300">
                   <ReactCountryFlag
                     aria-label="Spanish Language"
                     countryCode="US"
                     className="pr-2"
                   />
                   English
-                </button>
+                </div>
               ))}
           </button>
 
