@@ -6,7 +6,7 @@ const Cards = (props) => {
   const { title, subtitle, date, image, alt, link } = props;
   return (
     <Link href={link}>
-      <div className="flex w-96 h-96 cursor-pointer hover:scale-125">
+      <div className="flex w-96 h-96 cursor-pointer md:hover:scale-125">
         <Image
           width={300}
           height={100}
