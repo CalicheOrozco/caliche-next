@@ -1,0 +1,236 @@
+---
+title: "Resaltar la sintaxis de tu código con prisma reaccionar"
+date: "02 Mayo del 2022"
+subtitle: "Prism.js es una librería increible para resaltar código en tu pagina. Probablemente la mejor que he visto y usado. Sin embargo, tiene un problema serio..."
+image: "1/prism-react.jpg"
+---
+
+<ContainerBlog>
+  <Title text="Resaltar la sintaxis de tu código con prisma reaccionar" />
+  <Date text="02 Mayo del 2022" />
+
+<Photo image="1/prism-react.jpg" />
+<p>
+  Prism.js es una librería increible para resaltar código en tu pagina.
+  Probablemente la mejor que he visto y usado. Sin embargo, tiene un problema
+  serio. La documentación, aunque simple, se siente muy confusa al mismo tiempo.
+  No puedo evitar sentirme un poco perdido cada vez que trato de usarlo con
+  React.
+</p>
+
+<p>
+  Como acabo de pasar por el proceso de implementación de Prism.js justo en esta
+  pagina web, decidí escribir un tutorial simple sobre cómo usarlo con React.
+  Todos los ejemplos de código que está a punto de ver usan Prism.js para
+  resaltar el código.
+</p>
+
+<a>
+  **Este tutorial asume que se está utilizando el paquete de React estándar**
+</a>
+
+<Subtitle text="Instalación de Prism.js" />
+
+<p>
+  Lo primero que debemos hacer es instalar la biblioteca
+  <Link href="https://github.com/FormidableLabs/prism-react-renderer">
+    prism-react-renderer
+  </Link>
+  con NPM o yarn al igual que el paquete de styled-components que utilizaremos mas
+  adelante.
+</p>
+
+<CodeBox
+  language="bash"
+  code="npm install --save prism-react-renderer styled-components
+# OR
+yarn add prism-react-renderer styled-components"
+/>
+
+<Subtitle text="Creación del componente" />
+<p>
+  Dentro de nuestro proyecto vamos a nuestra carpeta de <Code>components</Code>,
+  en caso de no tenerla la creamos y dentro de ella creamos el archivo{" "}
+  <Code>CodeBox.js</Code> o el nombre que deseas que tenga tu componente.
+</p>
+
+<Photo image="1/1.jpg" />
+
+<p>
+  Tambien dentro de <Code>components</Code>, creamos un archivo llamado{" "}
+  <Code>Styles.js</Code> que son los estilos necesarios para nuestro{" "}
+  <Code>CodeBox.js</Code>
+</p>
+<a>
+  Componente <Code>Styles.js</Code>:
+</a>
+<CodeBox
+  language="jsx"
+  code='import styled from "styled-components";
+        
+export const Wrapper = styled.div`
+  font-family: sans-serif;
+  text-align: center;
+`;
+      
+export const Pre = styled.pre`
+  text-align: left;
+  margin: 1em 0;
+  padding: 0.5em;
+  overflow: scroll;
+        
+& .token-line {
+line-height: 1.3em;
+height: 1.3em;
+}
+`;
+          
+export const Line = styled.div`
+  display: table-row;
+`;
+       
+export const LineNo = styled.span`
+  display: table-cell;
+  text-align: right;
+  padding-right: 1em;
+  user-select: none;
+  opacity: 0.5;
+`;
+              
+export const LineContent = styled.span`
+  display: table-cell;
+`;
+'
+/>
+
+<a>
+  Componente <Code>CodeBox.js</Code> de ejemplo:
+</a>
+
+<CodeBox
+  language="jsx"
+  code='import React from "react";
+import { Pre } from "./Styles";
+import Highlight, { defaultProps } from "prism-react-renderer";
+import theme from "prism-react-renderer/themes/vsDark";
+            
+const exampleCode = `
+function someDemo() {
+  var test = "Hello World!";
+  console.log(test);
+};
+             
+return () => <App />;
+`;
+          
+const CodeBox = () => {
+  const codeFinal = code.trim();
+  return (
+    <Highlight
+      {...defaultProps}
+      theme={theme}
+      code={exampleCode}
+      language="jsx"
+    >
+      {({ className, style, tokens, getLineProps, getTokenProps }) => (
+        <Pre className={className} style={style}>
+          {tokens.map((line, i) => (
+            <div {...getLineProps({ line, key: i })}>
+              {line.map((token, key) => (
+                <span {...getTokenProps({ token, key })} />
+              ))}
+            </div>
+          ))}
+        </Pre>
+      )}
+    </Highlight>
+  );
+};
+                
+export default CodeBox;
+'
+/>
+
+<a>
+  Componente <Code>CodeBox.js</Code> dinamico:
+</a>
+
+<CodeBox
+  language="jsx"
+  code='import React from "react";
+import { Pre } from "./Styles";
+import Highlight, { defaultProps } from "prism-react-renderer";
+import theme from "prism-react-renderer/themes/vsDark";
+     
+const CodeBox = ({ language, code }) => {
+  const codeFinal = code.trim();
+  return (
+    <Highlight
+      {...defaultProps}
+      theme={theme}
+      code={codeFinal}
+      language={language}
+    >
+      {({ className, style, tokens, getLineProps, getTokenProps }) => (
+        <Pre className={className} style={style}>
+          {tokens.map((line, i) => (
+            <div {...getLineProps({ line, key: i })}>
+              {line.map((token, key) => (
+                <span {...getTokenProps({ token, key })} />
+              ))}
+            </div>
+          ))}
+        </Pre>
+      )}
+    </Highlight>
+  );
+};
+    
+export default CodeBox;
+'
+/>
+
+<p>
+  En este componente funcional, recibimos como 2 props para que nuestro{" "}
+  <Code>CodeBox</Code> sea mas dinamico, el primero es <Code>Language</Code> con
+  el cual definimos cual sera el lenguaje de nuestro código, el segundo es{" "}
+  <Code>Code</Code> que sera nuestro código que queremos resaltar.
+</p>
+<Subtitle text="Ejemplo" />
+
+<p>
+  En nuestro <Code>index.js</Code> vamos a importar nuestro componente{" "}
+  <Code>CodeBox.js</Code>:
+</p>
+
+<CodeBox
+  language="jsx"
+  code='import CodeBox from "../components/CodeBox";
+   
+export default function Home() {
+  return <CodeBox />;
+}
+'
+/>
+<a>En el caso del componente dinamico seria algo así: </a>
+<CodeBox
+  language="jsx"
+  code='import CodeBox from "../components/CodeBox";
+   
+export default function Home() {
+  return (
+    <CodeBox
+      language="jsx"
+      code="// index.js
+// Módulo de operaciones matemáticas
+module.exports = {
+  add: (a, b) => a + b,
+  mult: (a, b) => a \ b
+}
+"
+    />
+  );
+}
+'
+/>
+</ContainerBlog>
