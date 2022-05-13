@@ -26,7 +26,7 @@ export default {
   ),
   Link: (props) => (
     <a
-      className="text-xl text-green-600 text-left underline"
+      className="text-xl text-green-600 text-left underline px-1"
       href="props.href"
       target="_blank"
       {...props}
