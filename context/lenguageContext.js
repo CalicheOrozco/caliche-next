@@ -7,7 +7,7 @@ export const useLanguageContext = () => {
 };
 
 export function LanguageProvider({ children }) {
-  const [lenguage, setlenguage] = React.useState("Es");
+  const [lenguage, setlenguage] = React.useState("En");
 
   const changeLenguage = (lenguage) => {
     setlenguage(lenguage);
