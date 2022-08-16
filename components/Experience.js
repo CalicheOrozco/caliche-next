@@ -60,7 +60,14 @@ const ExperienceCard = ({ title, desc, year, company, companyLink }) => {
       <a href={companyLink} className="text-gray-500">
         {company}
       </a>
-      <p className="text-gray-600 dark:text-gray-400 my-2">{desc}</p>
+      <lu className="text-gray-600 dark:text-gray-400 my-2">
+      {Array.isArray(desc)
+        ? desc.map((user, i) => {
+          return <li className="text-gray-600 dark:text-gray-400 my-2 list-none">{`${user}`}</li>;
+          })
+        :  <li className="text-gray-600 dark:text-gray-400 my-2 list-none">{`${desc}`}</li>
+      }
+        </lu>
     </div>
   );
 };
