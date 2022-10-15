@@ -6,6 +6,11 @@ const myData = {
   email: "info@calicheorozco.com",
   projects: [
     {
+      title: "Caliche weather APP",
+      link: "https://caliche-weather-app.vercel.app/",
+      imgUrl: "/portafolio10.jpg",
+    },
+    {
       title: "Caliche Orozco old Landingpage",
       link: "https://caliche-old-page-react.herokuapp.com/",
       imgUrl: "/portafolio8.jpg",
