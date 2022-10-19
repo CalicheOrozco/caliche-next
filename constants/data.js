@@ -6,6 +6,11 @@ const myData = {
   email: "info@calicheorozco.com",
   projects: [
     {
+      title: "English Tenses by Caliche",
+      link: "https://english-tenses-caliche.vercel.app/",
+      imgUrl: "/portafolio11.jpg",
+    },
+    {
       title: "Caliche weather APP",
       link: "https://caliche-weather-app.vercel.app/",
       imgUrl: "/portafolio10.jpg",
