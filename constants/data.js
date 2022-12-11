@@ -22,24 +22,24 @@ const myData = {
     },
     {
       title: "Caliche Orozco old Landingpage",
-      link: "https://caliche-old-page-react.herokuapp.com/",
+      link: "https://calicheorozco-old-page.vercel.app/",
       imgUrl: "/portafolio8.jpg",
     },
 
     {
       title: "Caliche MOVIE API",
-      link: "https://caliche-movies.herokuapp.com/",
+      link: "https://caliche-movies-6l62h0uny-calicheorozco.vercel.app/",
       imgUrl: "/portafolio9.jpg",
     },
 
     {
       title: "Futurnow React Landingpage",
-      link: "https://futrnow.herokuapp.com/",
+      link: "https://futurnow-caliche-cux7wef0s-calicheorozco.vercel.app/",
       imgUrl: "/portafolio6.jpg",
     },
     {
       title: "Bookmark App",
-      link: "https://bookmark-app-caliche.herokuapp.com/",
+      link: "https://bookmark-app-caliche-i6pw79omy-calicheorozco.vercel.app/",
       imgUrl: "/portafolio7.jpg",
     },
     {
