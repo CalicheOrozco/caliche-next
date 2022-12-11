@@ -6,6 +6,11 @@ const myData = {
   email: "info@calicheorozco.com",
   projects: [
     {
+      title: "Memory Game by Caliche",
+      link: "https://memory-game-caliche.vercel.app/",
+      imgUrl: "/portafolio12.png",
+    },
+    {
       title: "English Tenses by Caliche",
       link: "https://english-tenses-caliche.vercel.app/",
       imgUrl: "/portafolio11.jpg",
