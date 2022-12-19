@@ -6,10 +6,10 @@ const Cards = (props) => {
   const { title, subtitle, date, image, alt, link } = props;
   return (
     <Link href={link}>
-      <div className="flex w-96 h-96 cursor-pointer md:hover:scale-125">
+      <div className="flex flex-col w-96 h-96 cursor-pointer md:hover:scale-125">
         <Image
           width={300}
-          height={100}
+          height={300}
           objectFit="cover"
           className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
           src={image}
@@ -23,12 +23,12 @@ const Cards = (props) => {
             <p className="text-gray-700 text-base">{subtitle}</p>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center pt-4">
             <Image
               width={40}
               height={40}
               className="rounded-full mr-4"
-              src="/avatar.png"
+              src="/avatar.jpg"
               alt="Caliche Orozco Avatar"
             />
             <div className="text-sm flex flex-col gap-1 pl-2">
