@@ -255,7 +255,7 @@ export default function Navbar() {
               {lenguage === "Es"
                 ? "Ver CV"
                 : lenguage === "En"
-                ? " View CV"
+                ? " View Resume"
                 : null}
             </button>
           </Link>
