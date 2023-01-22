@@ -6,8 +6,8 @@ const myData = {
   email: "info@calicheorozco.com",
   projects: [
     {
-      title: "Fill in the blanks by Caliche",
-      link: "https://fill-in-the-blanks-caliche.vercel.app/",
+      title: "Duolingo English test preparation by Caliche",
+      link: "https://duolingo-test-practice-caliche.vercel.app/",
       imgUrl: "/portafolio13.png",
     },
     {
