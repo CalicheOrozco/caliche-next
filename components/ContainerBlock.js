@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Script from "next/script";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
@@ -18,15 +19,6 @@ export default function ContainerBlock({ children, ...customMeta }) {
   return (
     <div>
       <Head>
-      {/* Google tag (gtag.js) */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6J4VPVBQV"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-G6J4VPVBQV');
-      </script>
         <link rel="shortcut icon" href="./favicon.ico" />
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
@@ -51,6 +43,25 @@ export default function ContainerBlock({ children, ...customMeta }) {
       </Head>
       <main className="dark:bg-gray-800 w-full">
         <Navbar />
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+        />
+      
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-G6J4VPVBQV', {
+          page_path: window.location.pathname,
+          });
+        `,
+          }}
+        />
         <div>{children}</div>
         <Footer />
       </main>
