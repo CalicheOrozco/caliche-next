@@ -86,19 +86,19 @@ export default function AboutMe() {
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 {lenguage === "Es"
-                  ? "Actualmente no estoy buscando trabajo, pero si me ve como una buena opción para su vacante, revisa mi "
+                  ? "Actualmente estoy buscando oportunidades de empleo y agradecería si me consideraran para cualquier puesto vacante que se alinee con mis skills. Por favor, echa un vistazo a mi "
                   : lenguage === "En"
-                  ? "I'm don't looking for a job currently, but If you see me as a good fit for you vacant, check my "
+                  ? "I am currently seeking employment opportunities and would appreciate it if you would consider me for any open positions that align with my qualifications. Please take a look at my "
                   : null}
                 <Link href="/CV">
                   <a className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300">
-                    CV
+                    Resume
                   </a>
                 </Link>
                 {lenguage === "Es"
-                  ? " y con gusto lo platicamos."
+                  ? " y estaré encantado de discutir cualquier posible oportunidad de trabajo con usted."
                   : lenguage === "En"
-                  ? " and I'd love to talk about it."
+                  ? ", and I would be happy to discuss any potential job opportunities with you."
                   : null}
               </p>
             </div>
