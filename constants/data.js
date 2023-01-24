@@ -79,7 +79,7 @@ const myData = {
     titleEs:
       "Soy un middle-level front-end developer con 2 años de experiencia en la creación de diseños web receptivos y aplicaciones móviles fáciles de usar para startups. Actualmente, estoy trabajando en ",
     description: [
-      `He estado desarrollando sitios web desde que tenía 12 años. En ese momento, el término "desarrollador front-end" aún no existía, pero ya estaba aprendiendo HTML y experimentando con CSS. Descubrí Bootstrap como una solución a los problemas de estilo y me di cuenta de su popularidad entre los desarrolladores.`,
+      `I have been developing front-end pages since I was 12 years old. At the time, the term "front-end developer" did not exist yet, but I was already learning HTML and experimenting with CSS. I discovered Bootstrap as a solution to styling issues and realized its popularity among developers.`,
       `
       As I gained more experience, I expanded my skillset to include modern technologies such as React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, and Tailwind, among others.`,
     ],
