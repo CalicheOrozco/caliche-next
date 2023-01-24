@@ -6,8 +6,8 @@ const myData = {
   email: "info@calicheorozco.com",
   projects: [
     {
-      title: "Duolingo English test preparation by Caliche",
-      link: "https://duolingo-test-practice-caliche.vercel.app/",
+      title: "English Certify by Caliche",
+      link: "https://www.englishcertify.com/",
       imgUrl: "/portafolio13.png",
     },
     {
@@ -75,12 +75,11 @@ const myData = {
   ],
   about: {
     title:
-      "Middle front-end developer with two years of experience building responsive web design and mobile apps completely responsive, and intuitive for users at startups. Currently working on ",
+      "I am a middle-level front-end developer with 2 years of experience in creating responsive web designs and mobile apps that are user-friendly for startups. Currently, I am working on ",
     titleEs:
-      "Middle front-end developer con dos años de experiencia en la creación de aplicaciones móviles y diseño web responsivo completamente receptivos e intuitivos para los usuarios en distintas startups. Actualmente trabajando en ",
+      "Soy un middle-level front-end developer con 2 años de experiencia en la creación de diseños web receptivos y aplicaciones móviles fáciles de usar para startups. Actualmente, estoy trabajando en ",
     description: [
-      `I've been developing front-end pages since I was 12 years old. I didn't know what front-end developer meant at that time because the term was not coined back then. `,
-      `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and for obvious reasons - if you knew bootstrap, you were cool.`,
+      `I have been developing front-end pages since I was 12 years old. At the time, the term "front-end developer" did not exist yet, but I was already learning HTML and experimenting with CSS. I discovered Bootstrap as a solution to styling issues and realized its popularity among developers.`,
       `
       But now, I've gained experience. I've been coding in React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, Tailwind, etc to name a few.`,
     ],
