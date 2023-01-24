@@ -79,15 +79,14 @@ const myData = {
     titleEs:
       "Soy un middle-level front-end developer con 2 años de experiencia en la creación de diseños web receptivos y aplicaciones móviles fáciles de usar para startups. Actualmente, estoy trabajando en ",
     description: [
-      `I have been developing front-end pages since I was 12 years old. At the time, the term "front-end developer" did not exist yet, but I was already learning HTML and experimenting with CSS. I discovered Bootstrap as a solution to styling issues and realized its popularity among developers.`,
+      `He estado desarrollando sitios web desde que tenía 12 años. En ese momento, el término "desarrollador front-end" aún no existía, pero ya estaba aprendiendo HTML y experimentando con CSS. Descubrí Bootstrap como una solución a los problemas de estilo y me di cuenta de su popularidad entre los desarrolladores.`,
       `
-      But now, I've gained experience. I've been coding in React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, Tailwind, etc to name a few.`,
+      As I gained more experience, I expanded my skillset to include modern technologies such as React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, and Tailwind, among others.`,
     ],
     descriptionEs: [
       `He estado desarrollando páginas web desde que tenía 12 años. No sabía qué significaba ser desarrollador front-end en ese momento porque el término no se acuñaba en ese tiempo. `,
-      `Después de aprender HTML y luchar con CSS, se me ocurrió una idea brillante de usar bootstrap para no tener que diseñar todo yo solo y por razones obvias: si sabías bootstrap, eras cool.`,
-      `
-      Pero ahora, he ganado experiencia. He estado programando en React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap, Tailwind, etc., por nombrar algunos.`,
+      `A medida que adquiría más experiencia, amplié mi conjunto de habilidades para incluir tecnologías modernas como React, Next JS, TypeScript, React-hook-form, Editor.js, Node.js, MySQL, Bootstrap y Tailwind, entre otras.`,
+      
     ],
     currentProject: "Bedu",
     currentProjectUrl: "https://github.com/bedu-hq",
@@ -98,35 +97,35 @@ const myData = {
       company: "Moncton, New Brunswick, Canada",
       year: "2022",
       companyLink: "https://www.facebook.com/HolaNewBrunswick",
-      desc: "Helping newcomers from Latino America in Moncton to integrate with the community of New Brunswick and share Latino America culture in event as Mosaiq Moncton Festival 2022 with the nonprofit organization Hola New Brunswick.",
-    },
+      desc: ["•	Volunteered with the nonprofit organization Hola New Brunswick to assist newcomers from Latin America in Moncton in integrating into the community of New Brunswick."," • Collaborated in organizing and promoting cultural events such as the Mosaiq Moncton Festival 2022, showcasing Latin American culture."]
+     },
     {
       title: "Front-End Developer",
       company: "BEDU",
       year: "2021-2022",
       companyLink: "https://bedu.org/",
-      desc: ["•	Built websites with React and TailwindCSS."," •	Collaborated with the UX/UI design teams to improve the website, increasing the speed of the site by 50%.","•	Worked with product and backend teams to create different web products." ,"•	Participated in product releases and code reviews with 3 Senior developers and team leads.","•	Great work ethic and attention to detail.","•	Assisted in building 100% reusable code and libraries for future use.", "Different frontend activities were assigned, which I solved with technologies such as Next JS, TypeScript, React-hook-form, Editor.js, Node.js, ReactQuery, GraphQL, etc."],
+      desc: ["•	Developed websites using React and TailwindCSS, collaborating with UX/UI design teams to enhance website performance by 50%."," • Contributed to creating various web products in partnership with product and backend teams." ," • Participated in product releases and code reviews, working closely with 3 senior developers and team leads." ," • Demonstrated strong work ethic and attention to detail." ," • Assisted in developing 100% reusable code and libraries for future projects." ," • Completed a variety of front-end tasks utilizing technologies such as Next JS, TypeScript, React-hook-form, Editor.js, Node.js, ReactQuery, and GraphQL."],
     },
     {
       title: "Apprenticeship",
       company: "Scio Consulting",
       year: "2021",
       companyLink: "https://sciodev.com/",
-      desc: ["•	Knowledge of UX/UI best practices.","•	Learned and applied scrum methodology.","•	Worked with product teams on new launches.","•	Optimized application for maximum speed and scalability.","•	Worked on the technical debts and reduced by 30%."],
+      desc: ["•	Strong understanding of UX/UI best practices.","•	Acquired and implemented Scrum methodology.","•	Collaborated with product teams on new product launches.","•	Optimized applications for optimal speed and scalability.","•	Addressed and reduced technical debt by 30%."],
     },
     {
       title: "Front-end Internship",
       company: "Logiety",
       year: "2021",
       companyLink: "https://logiety.com/",
-      desc: ["•	Built landing pages with React and CSS.","•	Creation of Templates in Openpyxl reduced the time for the filling of forms in 90%.","•	Built CSS effects improving the interaction between the clients and the website.","•	Developed new features."]
+      desc: ["•	Developed landing pages using React.","•	Created templates in Openpyxl, which significantly reduced the time required for form filling by 90%.","•	Implemented CSS effects to enhance user interaction with the website.","•	Contributed to the development of new features."]
     },
     {
       title: "IT culture coordinator and promoter",
       company: "Veracruz",
       year: "2017-2021",
       companyLink: "https://es.wikipedia.org/wiki/Veracruz",
-      desc: "Coordinate event such as: Talent Nights Veracruz 2017-2019, Arduino Day Veracruz 2018-2019, Hacker Day 2019, Tecnovation Challange Veracruz, Technological Meetups Veracruz, etc.",
+      desc: ["• Coordinated and organized various events such as Talent Nights Veracruz (2017-2019), Arduino Day Veracruz (2018-2019), Hacker Day (2019), Tecnovation Challenge Veracruz, and Technological Meetups Veracruz."]
     },
     {
       title: "Conferences and Workshops",
@@ -147,7 +146,7 @@ const myData = {
       company: "ITVER Green Students.",
       year: "2017-2022",
       companyLink: "https://www.facebook.com/EstudiantesVerdesMx",
-      desc: "Founder and organizer of activities for sustainable development such as Beach cleaning, Support for marginalized communities, Reforestation of parks, Visits to hospitals, Collection of recyclable material, etc.",
+      desc: ["• Founded and organized various activities focused on sustainable development, including beach cleaning, support for marginalized communities, reforestation of parks, hospital visits, and collection of recyclable materials."]
     },
   ],
   experienceEs: [
@@ -156,28 +155,28 @@ const myData = {
       company: "Moncton, New Brunswick, Canada",
       year: "2022",
       companyLink: "https://www.facebook.com/HolaNewBrunswick",
-      desc: "Ayudar a los recién llegados de América Latina a Moncton a integrarse con la comunidad de New Brunswick y compartir la cultura de América Latina en un evento como el Festival Mosaiq Moncton 2022 con la organización sin fines de lucro Hola New Brunswick.",
-    },
+      desc: ["•	Se hizo voluntariodo en organizaciones sin fines de lucro como Hola New Brunswick para ayudar a los recién llegados de América Latina a Moncton a integrarse en la comunidad de New Brunswick"," • Colaboró en la organización y promoción de eventos culturales como el Festival Mosaiq Moncton 2022, representando a la cultura latinoamericana."]
+     },
     {
       title: "Front-End Developer",
       company: "BEDU",
       year: "2021-2022",
       companyLink: "https://bedu.org/",
-      desc: ["• Construí sitios web con React y TailwindCSS."," • Colaboré con los equipos de diseño de UX/UI para mejorar el sitio web, aumentando la velocidad del sitio en un 50%.","• Trabajé con los equipos de producto y back-end para crear diferentes productos web.","• Participé en lanzamientos de productos y revisiones de código con 3 desarrolladores sénior y líderes de equipo.","• Gran ética de trabajo y atención a los detalles.","• Ayudé a crear código y bibliotecas 100% reutilizables para uso futuro.","Se asignaron diferentes actividades de frontend, las cuales resolví con tecnologías como Next JS, TypeScript, React-hook-form, Editor.js, Node.js, ReactQuery, GraphQL, etc."],
+      desc: ["•	Developed websites using React and TailwindCSS, collaborating with UX/UI design teams to enhance website performance by 50%."," • Contribuyó a la creación de varios productos web en conjunto con los equipos de producto y back-end." ," • Participé en lanzamientos de productos y revisiones de código, trabajando en estrecha colaboración con 3 desarrolladores senior y líderes de equipo." ," • Demostrado fuerte ética de trabajo y atención al detalle." ," • Asistió en el desarrollo de código y bibliotecas 100% reutilizables para proyectos futuros." ," • Completé una variedad de tareas de front-end utilizando tecnologías como Next JS, TypeScript, React-hook-form, Editor.js, Node.js, ReactQuery, and GraphQL."],
     },
     {
       title: "Apprenticeship",
       company: "Scio Consulting",
       year: "2021",
       companyLink: "https://sciodev.com/",
-      desc: ["• Conocimiento de las mejores prácticas de UX/UI.","• Metodología scrum aprendida y aplicada.","• Trabajé con equipos de productos en nuevos lanzamientos.","• Aplicación optimizada para máxima velocidad y escalabilidad.","• Trabajé sobre las deudas técnicas y se redujo en un 30%."],
+      desc: ["• Conocimiento de las mejores prácticas de UX/UI.","• Adquirí e implementé la metodología Scrum.","• Colaboré con los equipos de producto en los lanzamientos de nuevos productos.","• Aplicación optimizada para máxima velocidad y escalabilidad.","• abordé sobre las deudas técnicas y se redujo en un 30%."],
     },
     {
       title: "Front-end Internship",
       company: "Logiety",
       year: "2021",
       companyLink: "https://logiety.com/",
-      desc: ["• Construí landing pages con React y CSS.","• La creación de Plantillas en Openpyxl que redujo el tiempo de llenado de formularios en un 90%.","• Construí efectos CSS mejorando la interacción entre los clientes y el sitio web." ,"• Desarrolló nuevas características."],
+      desc: ["• Desarrollé landing pages usando React.","• Plantillas creadas en Openpyxl, lo que redujo significativamente el tiempo requerido para completar formularios en un 90%.","• Se implementaron efectos CSS para mejorar la interacción del usuario con el sitio web." ,"• Desarrolló nuevas características."],
     },
     {
       title: "Coordinador y promotor de cultura TI",
