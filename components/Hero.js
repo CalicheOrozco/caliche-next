@@ -8,7 +8,7 @@ export default function Hero() {
   const colors = ["#16a34a", "#3B82F6", "#84CC16", "#f94444"];
   const { lenguage } = useContext(LanguageContext);
   return (
-    <div className="flex flex-row justify-center py-10 lg:py-2 items-start overflow-hidden">
+    <div className="flex flex-row justify-center py-10 md:py-20 lg:py-2 items-start overflow-hidden">
       {/* Text container */}
 
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
