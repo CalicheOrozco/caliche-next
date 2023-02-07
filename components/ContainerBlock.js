@@ -20,6 +20,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
     <div>
       <Head>
         <link rel="shortcut icon" href="./favicon.ico" />
+        <link rel="manifest" href="./manifest.json" />
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
