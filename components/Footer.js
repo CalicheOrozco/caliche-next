@@ -6,9 +6,9 @@ export default function Footer() {
   const year = currentTime.getFullYear();
   return (
     <div className="bg-[#F1F1F1] dark:bg-gray-900">
-      <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+      <div className="w-full mx-auto px-10 py-5 md:py-20">
         <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
-        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center mt-8">
+        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between items-center mt-4">
           <div>
             <p>{year} &copy; Caliche Orozco. All Rights Reserved.</p>
           </div>

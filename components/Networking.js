@@ -23,14 +23,14 @@ const Networking = () => {
     generateFrase();
   }, []);
   return (
-    <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+    <section className="bg-white dark:bg-gray-800 w-full">
+      <div className="max-w-6xl mx-auto py-5 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-8xl xl:text-9xl font-bold py-20 text-center md:text-left">
           Networking
         </h1>
       </div>
-      <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900 h-full">
-        <div className="text-center max-w-6xl mx-auto pt-20">
+      <div className="w-ful mx-auto py-5 bg-white dark:bg-gray-800  rounded-xl py-5">
+        <div className="text-center w-full mx-auto">
           {frases.length > 0 ? (
             <>
               <p
