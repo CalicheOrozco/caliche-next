@@ -43,7 +43,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
         )}
       </Head>
       <main className="dark:bg-gray-800 w-full min-h-screen">
-        <Navbar />
+        
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
@@ -64,7 +64,6 @@ export default function ContainerBlock({ children, ...customMeta }) {
           }}
         />
         <div>{children}</div>
-        <Footer />
       </main>
     </div>
   );
