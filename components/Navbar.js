@@ -216,7 +216,7 @@ export default function Navbar() {
           <Link href="/CV">
             <button
               type="button"
-              class="text-white bg-green-500 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
+              class="text-white bg-green-600 hover:bg-green-900 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
             >
               {lenguage === "Es"
                 ? "Ver CV"
