@@ -3,6 +3,7 @@ import ContainerBlock from "../components/ContainerBlock";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function experience() {
   return (
@@ -15,6 +16,7 @@ export default function experience() {
         <div className="relative bg-cover bg-center  flex-grow flex items-center justify-center">
           <Experience />
         </div>
+        <ScrollToTop />
         <Footer />
       </div>
     </ContainerBlock>

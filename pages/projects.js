@@ -3,6 +3,7 @@ import ContainerBlock from "../components/ContainerBlock";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function projects() {
   return (
@@ -15,6 +16,7 @@ export default function projects() {
         <div className="relative bg-cover bg-center  flex-grow flex items-center justify-center">
           <Projects />
         </div>
+        <ScrollToTop />
         <Footer />
       </div>
     </ContainerBlock>

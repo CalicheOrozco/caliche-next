@@ -2,6 +2,7 @@ import Cards from "../../components/Cards";
 import ContainerBlock from "../../components/ContainerBlock";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar"
+import ScrollToTop from "../../components/ScrollToTop";
 
 import { getAllFilesMetadata } from "../../lib/mdx";
 
@@ -29,6 +30,7 @@ export default function Home({ posts }) {
         </div>
       </section>
         </div>
+        <ScrollToTop />
         <Footer />
       </div>
     </ContainerBlock>

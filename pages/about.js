@@ -3,6 +3,7 @@ import ContainerBlock from "../components/ContainerBlock";
 import AboutMe from "../components/AboutMe";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function about() {
   return (
@@ -17,6 +18,7 @@ export default function about() {
         </div>
         <Footer />
       </div>
+      <ScrollToTop />
     </ContainerBlock>
   );
 }
