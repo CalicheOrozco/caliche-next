@@ -30,7 +30,7 @@ const Conocer = () => {
           Conocer
         </h1>
       </div>
-      <div className="w-ful mx-auto py-5 bg-white dark:bg-gray-800  rounded-xl py-5">
+      <div className="w-ful mx-auto py-5 bg-white dark:bg-gray-800  rounded-xl">
         <div className="text-center w-full mx-auto">
           {frases.length > 0 ? (
             <>
