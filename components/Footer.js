@@ -29,14 +29,14 @@ export default function Footer() {
           <div className="space-x-4 flex flex-row items-center">
             <a
               href={myData.socialLinks.github}
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-600 hover:text-gray-300 dark:text-gray-300 dark:hover:text-gray-600"
               target="_blank"
             >
               < BsGithub className="inline-block text-xl" />
             </a>
             <a
               href={myData.socialLinks.linkedin}
-              className="text-base font-normal text-gray-600 dark:text-gray-300"
+              className="text-base font-normal text-gray-600 hover:text-gray-300 dark:text-gray-300 dark:hover:text-gray-600"
               target="_blank"
             >
               < BsLinkedin className="inline-block text-xl" />
