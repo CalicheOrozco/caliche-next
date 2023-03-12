@@ -181,36 +181,49 @@ export default function Navbar() {
       </div>
       <div className="flex gap-x-4 justify-around md:hidden mt-4">
         <Link href="/about">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+          <a className={`text-base font-normal ${router.asPath === "/about" ? "text-green-600" : "text-gray-600 dark:text-gray-300" }`}>
             {lenguage === "Es"
               ? "¿Quien soy?"
               : lenguage === "En"
               ? "About"
               : null}
+              {router.asPath === "/about" && (
+                < BsArrowDown className="inline-block h-3 w-3" />
+              )}
           </a>
         </Link>
         <Link href="/projects">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+          <a className={`text-base font-normal ${router.asPath === "/projects" ? "text-green-600" : "text-gray-600 dark:text-gray-300" }`}>
             {lenguage === "Es"
               ? "Proyectos"
               : lenguage === "En"
               ? "Projects"
               : null}
+              {router.asPath === "/projects" && (
+                < BsArrowDown className="inline-block h-3 w-3" />
+              )}
           </a>
         </Link>
         <Link href="/experience">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+          <a className={`text-base font-normal ${router.asPath === "/experience" ? "text-green-600" : "text-gray-600 dark:text-gray-300" }`}>
             {lenguage === "Es"
               ? "Experiencia"
               : lenguage === "En"
               ? "Experience"
               : null}
+              {router.asPath === "/experience" && (
+                < BsArrowDown className="inline-block h-3 w-3" />
+              )}
           </a>
         </Link>
         <Link href="/blog">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+          <a className={`text-base font-normal ${router.asPath === "/blog" ? "text-green-600" : "text-gray-600 dark:text-gray-300" }`}>
             Blog
+            {router.asPath === "/blog" && (
+                < BsArrowDown className="inline-block h-3 w-3" />
+              )}
           </a>
+          
         </Link>
       </div>
     </div>
