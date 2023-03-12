@@ -18,8 +18,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="w-full  mx-auto px-10 md:px-20 py-5 md:py-10">
-      <div className="flex  md:flex-row justify-between items-center">
+    <div className="w-full  mx-auto px-4 py-5">
+      <div className="flex  md:flex-row justify-around items-center">
         <div className="flex flex-col">
           <Link href="/">
             <a>
@@ -227,7 +227,7 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-      <div className="flex gap-x-4 justify-center md:hidden mt-4">
+      <div className="flex gap-x-4 justify-around md:hidden mt-4">
         <Link href="/about">
           <a className="text-base font-normal text-gray-600 dark:text-gray-300">
             {lenguage === "Es"
