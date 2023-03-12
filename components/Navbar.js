@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import myData from "../constants/data";
 import ReactCountryFlag from "react-country-flag";
 import LanguageContext from "../context/lenguageContext";
-import { BsGithub, BsLinkedin, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsFillSunFill, BsFillMoonFill, BsArrowDown } from "react-icons/bs";
 
 export default function Navbar() {
   const router = useRouter();
@@ -23,10 +23,10 @@ export default function Navbar() {
         <div className="flex flex-col">
           <Link href="/">
             <a>
-              <h1 className="font-semibold text-xl dark:text-gray-100">
+              <h1 className="font-semibold text-xl dark:text-gray-100 hover:text-green-600 dark:hover:text-green-600">
                 {myData.name}
               </h1>
-              <p className="text-base font-light text-gray-500 dark:text-gray-300">
+              <p className="text-base font-light text-gray-500 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-600">
                 {myData.designation}
               </p>
             </a>
@@ -38,8 +38,8 @@ export default function Navbar() {
             <a
               className={`text-base  ${
                 router.asPath === "/about"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
+                  ? "text-green-600 font-bold"
+                  : "text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-600 font-normal"
               }`}
             >
               {lenguage === "Es"
@@ -48,19 +48,7 @@ export default function Navbar() {
                 ? "About"
                 : null}
               {router.asPath === "/about" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
+                < BsArrowDown className="inline-block h-3 w-3" />
               )}
             </a>
           </Link>
@@ -68,8 +56,8 @@ export default function Navbar() {
             <a
               className={`text-base  ${
                 router.asPath === "/projects"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
+                  ? "text-green-600 font-bold"
+                  : "text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-600 font-normal"
               }`}
             >
               {lenguage === "Es"
@@ -79,19 +67,7 @@ export default function Navbar() {
                 : null}
 
               {router.asPath === "/projects" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
+                < BsArrowDown className="inline-block h-3 w-3" />
               )}
             </a>
           </Link>
@@ -99,8 +75,8 @@ export default function Navbar() {
             <a
               className={`text-base  ${
                 router.asPath === "/experience"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
+                  ? "text-green-600 font-bold"
+                  : "text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-600 font-normal"
               }`}
             >
               {lenguage === "Es"
@@ -109,19 +85,7 @@ export default function Navbar() {
                 ? "Experience"
                 : null}
               {router.asPath === "/experience" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
+                < BsArrowDown className="inline-block h-3 w-3" />
               )}
             </a>
           </Link>
@@ -129,25 +93,13 @@ export default function Navbar() {
             <a
               className={`text-base  ${
                 router.asPath === "/blog"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal "
+                  ? "text-green-600 font-bold"
+                  : "text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-600 font-normal"
               }`}
             >
               Blog
               {router.asPath === "/blog" && (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-down inline-block h-3 w-3"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
-                  />
-                </svg>
+                < BsArrowDown className="inline-block h-3 w-3" />
               )}
             </a>
           </Link>
@@ -156,14 +108,14 @@ export default function Navbar() {
         <div className="space-x-4 flex flex-row items-center">
           <a
             href={myData.socialLinks.github}
-            className="text-base font-normal text-gray-600 dark:text-gray-300 hidden lg:block"
+            className="text-base font-normal text-gray-600 hover:text-gray-300 dark:text-gray-300 dark:hover:text-gray-600 hidden lg:block"
             target="_blank"
           >
             < BsGithub className="inline-block text-xl" />
           </a>
           <a
             href={myData.socialLinks.linkedin}
-            className="text-base font-normal text-gray-600 dark:text-gray-300 hidden lg:block"
+            className="text-base font-normal text-gray-600 hover:text-gray-300 dark:text-gray-300 dark:hover:text-gray-600 hidden lg:block"
             target="_blank"
           >
             < BsLinkedin className="inline-block text-xl" />
@@ -176,7 +128,7 @@ export default function Navbar() {
             {mounted &&
               (lenguage === "En" ? (
                 <div>
-                  <div className="text-base font-normal text-gray-600 dark:text-gray-300">
+                  <div className="text-base font-normal text-gray-600 hover:text-gray-300 dark:text-gray-300 dark:hover:text-gray-600">
                     <ReactCountryFlag
                       aria-label="Spanish Language"
                       countryCode="MX"
@@ -206,9 +158,9 @@ export default function Navbar() {
             {mounted && (
               <div className="flex justify-center">
                 {theme === "dark" ? (
-                  <BsFillSunFill className="inline-block text-3xl w-4 h-4 text-yellow-500" />
+                  <BsFillSunFill className="inline-block text-3xl w-4 h-4 text-yellow-500 hover:text-white" />
                 ) : (
-                  <BsFillMoonFill className="inline-block text-3xl w-4 h-4 text-gray-500" />
+                  <BsFillMoonFill className="inline-block text-3xl w-4 h-4 text-gray-500 hover:text-gray-900" />
                 )}
               </div>
             )}
