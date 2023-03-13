@@ -47,7 +47,7 @@ const ProjectCard = ({ title, link, imgUrl, github }) => {
           </a>
         </div>
         <a href={github} target="_blank" className="w-full block shadow-2xl">
-        <h1 className="absolute top-5 right-2 text-gray-50 font-bold text-xl bg-green-600 hover:bg-green-800 rounded-md px-2">
+        <h1 className="absolute flex items-center top-5 right-2 text-gray-50 font-bold text-xl bg-green-600 hover:bg-green-800 rounded-lg px-2">
         < BsGithub className="inline-block mx-2" />
         {title}
         </h1> 
